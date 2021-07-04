@@ -10,6 +10,7 @@ while True:
         if i==j:
             print("Oops!You have used all your chances.You lost this game")
             input("Press any key to continue")
+            c=1
             break
         elif y>s:
             print("Your guess is greater than actual number!Try again")
@@ -21,5 +22,15 @@ while True:
             i+=1
     if y == s:
          print("You won\nCongratulations!")
-         print("You wanna try again?")
-         input("Press any key to continue")
+         w=input("You wanna try again?(y/n)")
+         if w=='n':
+                break
+         else:
+            pass
+    if c==1:
+        w=input("You wanna try again?(y/n)")
+        if w=='n':
+            break
+        else:
+            pass
+         
